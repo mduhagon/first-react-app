@@ -1,38 +1,33 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&display=swap');
+
+.board {
+  margin: 30pt auto;
+  border: 4px double #999;
+  border-spacing: 0px;
+}
+
+.cell {
+  height: 35pt;
+  width: 35pt;
   text-align: center;
+  border: 1px solid #ccc;
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 20pt;
+  cursor: pointer;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.board tr:nth-child(3) .cell, .board tr:nth-child(6) .cell {
+  border-bottom: 2px solid #191919;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.board td:nth-child(3).cell, .board td:nth-child(6).cell {
+  border-right: 2px solid #191919;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.cell.selected {
+  background-color: #caf7e3;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cell.related {
+  background-color: #edffec;
 }
