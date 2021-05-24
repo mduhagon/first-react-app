@@ -61,7 +61,7 @@ export default class Cell extends React.Component {
 
     render() {
         return (
-            <td id={this.getCellId()} className={this.getClasses()} onClick={this.handleClick}>
+            <td key={this.getCellId()} id={this.getCellId()} className={this.getClasses()} onClick={this.handleClick}>
                {this.getRenderValue()}
             </td>
         );

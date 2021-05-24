@@ -24,10 +24,11 @@
   border-right: 2px solid #191919;
 }
 
+.cell.related {
+  background-color: #edffec;
+}
+
 .cell.selected {
   background-color: #caf7e3;
 }
 
-.cell.related {
-  background-color: #edffec;
-}
