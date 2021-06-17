@@ -37,6 +37,12 @@ export default class Cell extends React.Component {
             isRelated: val
         }));
     }
+
+    value(val) {
+        this.setState(state => ({
+            value: val
+        }));
+    }
     
     // Empty cells internally are represented with 0,
     // but we do not want to display this to the user.

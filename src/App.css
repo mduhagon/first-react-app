@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&display=swap');
 
-.board {
+.container {
   margin: 30pt auto;
+  width: 315pt;
+}
+
+.board {
   border: 4px double #999;
   border-spacing: 0px;
 }
@@ -32,3 +36,13 @@
   background-color: #caf7e3;
 }
 
+.inputBar {
+  margin-top: 10pt;
+}
+
+.inputBar button {
+  margin-right: 5pt;
+  height: 30pt;
+  width: 30pt;
+  cursor: pointer;
+}  
